@@ -5,9 +5,8 @@ from funciones import consultar_clima_tiempo_real, mostrar_detalles_clima
 
 
 def consultar_por_municipio(lista_municipios, historial_consultas):
-    """
-    Permite consultar el clima seleccionando primero el municipio y luego la localidad.
-    """
+    """ Permite consultar el clima seleccionando primero el municipio y luego la localidad."""
+    
     print("\n--- SELECCIONE UN MUNICIPIO ---")
     for i, mun in enumerate(lista_municipios, start=1):
         print(f"{i}. {mun.nombre}")
