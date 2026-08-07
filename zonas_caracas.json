@@ -1,0 +1,82 @@
+{
+    "Chacao": [
+        {
+            "nombre": "Altamira",
+            "latitud": 10.5012,
+            "longitud": -66.8512
+        },
+        {
+            "nombre": "Challacao",
+            "latitud": null,
+            "longitud": null
+        },
+        {
+            "nombre": "Los Palos Grandes",
+            "latitud": 10.5003,
+            "longitud": -66.8431
+        }
+    ],
+    "Baruta": [
+        {
+            "nombre": "Las Mercedes",
+            "latitud": 10.4856,
+            "longitud": -66.8645
+        },
+        {
+            "nombre": "El Pe\u00f1\u00f3n",
+            "latitud": null,
+            "longitud": null
+        },
+        {
+            "nombre": "Baruta Centro",
+            "latitud": 10.4347,
+            "longitud": -66.8794
+        }
+    ],
+    "El Hatillo": [
+        {
+            "nombre": "Pueblo El Hatillo",
+            "latitud": 10.4267,
+            "longitud": -66.8289
+        },
+        {
+            "nombre": "La Lagunita",
+            "latitud": 10.4391,
+            "longitud": -66.8123
+        }
+    ],
+    "Sucre": [
+        {
+            "nombre": "Petare",
+            "latitud": 10.4833,
+            "longitud": -66.8167
+        },
+        {
+            "nombre": "La Urbina",
+            "latitud": 10.4891,
+            "longitud": -66.8052
+        },
+        {
+            "nombre": "Caurimare",
+            "latitud": null,
+            "longitud": null
+        }
+    ],
+    "Libertador": [
+        {
+            "nombre": "Catedral",
+            "latitud": 10.5061,
+            "longitud": -66.9143
+        },
+        {
+            "nombre": "El Para\u00edso",
+            "latitud": 10.49,
+            "longitud": -66.9333
+        },
+        {
+            "nombre": "23 de Enero",
+            "latitud": null,
+            "longitud": null
+        }
+    ]
+}
