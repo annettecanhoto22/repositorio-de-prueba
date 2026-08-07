@@ -10,7 +10,7 @@ def main():
     generar_reporte_carga(lista_municipios)
 
     while True:
-        print("== SISTEMA METEOROLÓGICO CARACAS ==")
+        print("\n== SISTEMA METEOROLÓGICO CARACAS ==\n")
         print("1. Consultar clima por Municipio / Localidad")
         print("2. Búsqueda directa por Localidad")
         print("3. Ver Estadísticas de la Sesión")
