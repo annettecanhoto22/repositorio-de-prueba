@@ -4,12 +4,11 @@ from funciones import ClimaConsultado, consultar_clima_api, mostrar_detalles_cli
 
 
 def consultar_por_municipio(lista_municipios, historial_consultas):
-    """
-    Permite consultar el clima seleccionando primero el municipio y luego la localidad.
-    """
+
+    #Permite consultar el clima seleccionando primero el municipio y luego la localidad.
     print("\n--- SELECCIONE UN MUNICIPIO ---")
-    for i, mun in enumerate(lista_municipios, start=1):
-        print(f"{i}. {mun.nombre}")
+    for i, municipio in enumerate(lista_municipios, start=1):
+        print(f"{i}. {municipio.nombre}")
         
     try:
         opcion_mun = int(input("Ingrese el número del municipio: ")) - 1
