@@ -84,7 +84,7 @@ def generar_reporte_carga(lista_municipios):
     Muestra en pantalla el reporte inicial por cada municipio según los requerimientos.
     """
     print("\n========================================")
-    print("      REPORTE DE CARGA DE LOCALIDADES   ")
+    print("== REPORTE DE CARGA DE LOCALIDADES ==")
     print("========================================")
     
     for mun in lista_municipios:
