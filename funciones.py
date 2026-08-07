@@ -7,10 +7,8 @@ from clases import Localidad, Municipio, ClimaActual
 
 
 def cargar_datos():
-    """
-    Lee el archivo zonas_caracas.json y transforma su estructura en una lista
-    de objetos Municipio, cada uno con su respectiva lista de objetos Localidad.
-    """
+    
+    """Lee el archivo zonas_caracas.json y transforma su estructura en una lista de objetos Municipio, cada uno con su respectiva lista de objetos Localidad."""
     archivo = open("zonas_caracas.json", "r", encoding="utf-8")
     contenido = json.load(archivo)
     archivo.close()
@@ -33,13 +31,8 @@ def cargar_datos():
 
 
 def generar_reporte_carga(lista_municipios):
-    """
-    Muestra en pantalla el reporte inicial de carga por cada municipio,
-    apoyándose en los métodos que la propia clase Municipio ofrece.
-    """
-    print("\n========================================")
-    print("      REPORTE DE CARGA DE LOCALIDADES   ")
-    print("========================================")
+    """ Muestra en pantalla el reporte inicial de carga por cada municipio, apoyándose en los métodos que la propia clase Municipio ofrece."""
+    print("\n=== REPORTE DE CARGA DE LOCALIDADES ===\n")
 
     for mun in lista_municipios:
         total = len(mun)
@@ -52,7 +45,7 @@ def generar_reporte_carga(lista_municipios):
         print(f"  - Con coordenadas geográficas: {con_coord}")
         print(f"  - Sin coordenadas geográficas: {sin_coord}")
         print(f"  - Porcentaje con coordenadas: {porcentaje:.2f}%")
-        print("-" * 40)
+        print("-----------------------------------------------------")
 
 
 def interpretar_codigo_clima(codigo):
@@ -76,10 +69,7 @@ def interpretar_codigo_clima(codigo):
 
 
 def consultar_clima_tiempo_real(nombre_municipio, nombre_localidad, lat, lon):
-    """
-    Consulta en tiempo real la API de Open-Meteo enviando latitud y longitud,
-    y arma un objeto ClimaActual con la respuesta obtenida.
-    """
+    """ Consulta en tiempo real la API de Open-Meteo enviando latitud y longitud, y arma un objeto ClimaActual con la respuesta obtenida."""
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code"
 
     try:
@@ -109,9 +99,7 @@ def consultar_clima_tiempo_real(nombre_municipio, nombre_localidad, lat, lon):
 
 
 def mostrar_detalles_clima(clima):
-    """
-    Despliega en pantalla los detalles meteorológicos de una consulta en tiempo real.
-    """
+    """ Despliega en pantalla los detalles meteorológicos de una consulta en tiempo real."""
     print("\n" + "=" * 45)
     print("          DETALLES METEOROLÓGICOS          ")
     print("=" * 45)
