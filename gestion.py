@@ -208,7 +208,7 @@ def consultar_historico(lista_municipios):
         return
 
     loc_sel = locs_validas[op_loc]
-
+    print ("\n 
     fecha_inicio = input("Ingrese fecha de inicio (AAAA-MM-DD): ").strip()
     fecha_fin = input("Ingrese fecha de fin (AAAA-MM-DD): ").strip()
 
