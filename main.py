@@ -1,8 +1,17 @@
 from funciones import cargar_datos, generar_reporte_carga
-from gestion import (consultar_por_municipio, consultar_por_busqueda_directa, mostrar_estadisticas, consultar_historico)
+from gestion import (
+    consultar_por_municipio,
+    consultar_por_busqueda_directa,
+    mostrar_estadisticas,
+    consultar_historico
+)
 
 
 def main():
+    """
+    Función principal: carga los datos, muestra el reporte inicial y
+    despliega el menú del sistema hasta que el usuario decida salir.
+    """
     lista_municipios = cargar_datos()
     historial_consultas = []
 
@@ -10,13 +19,15 @@ def main():
     generar_reporte_carga(lista_municipios)
 
     while True:
-        print("\n== SISTEMA METEOROLÓGICO CARACAS ==\n")
+        print("\n" + "=" * 40)
+        print("      SISTEMA METEOROLÓGICO CARACAS     ")
+        print("=" * 40)
         print("1. Consultar clima por Municipio / Localidad")
         print("2. Búsqueda directa por Localidad")
         print("3. Ver Estadísticas de la Sesión")
         print("4. Consulta Histórica Meteorológica")
-        print("5. Salir del sistema")
-        
+        print("5. Salir")
+
         opcion = input("\nSeleccione una opción (1-5): ").strip()
 
         if opcion == "1":
